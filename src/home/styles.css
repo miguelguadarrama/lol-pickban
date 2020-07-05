@@ -1,0 +1,35 @@
+
+
+.inline-list {
+    font-size: 0;
+}
+
+.bans .inline-list {
+    height: 48px;
+}
+
+.inline-list li{
+    list-style: none;
+    display: inline-block;
+    margin: 0;
+    opacity: 0.7;
+    transition: opacity 250ms ease-out;
+    cursor: pointer;
+}
+
+.inline-list li:hover, .inline-list li.selected {
+    opacity: 1;
+}
+
+
+.inline-list.pool li.selected {
+    display: none;
+}
+
+.bans .inline-list li:nth-child(n+7){
+    overflow: hidden;
+}
+
+.mb-4 {
+    margin-bottom: 15px;
+}
